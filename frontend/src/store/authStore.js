@@ -105,7 +105,7 @@ export const useAuthStore = create((set) => ({
 import { create } from "zustand";
 import axios from "axios";
 
-const API_URL = import.meta.env.MODE === "development" ? "http://localhost:5000/api/auth" : "/api/auth";
+const API_URL = import.meta.env.MODE === "development" ? "https://kunwarauth.onrender.com/api/auth" : "/api/auth";
 
 axios.defaults.withCredentials = true;
 
